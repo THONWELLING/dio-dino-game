@@ -1,0 +1,48 @@
+body {
+  background: #fafafa;
+}
+
+.dino{
+  width: 60px;
+  height: 60px;
+  background-image: url(./assets/dino.png) ;
+  position: absolute;
+  bottom: 0;
+}
+
+.cactus{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url(./assets/cactus.png);
+}
+
+.game-over {
+  text-align: center;
+  color: gainsboro;
+  text-shadow: 2px 2px 2px #353553;
+  margin-top: 60px;
+  font-family: fantasy;
+  font-weight: lighter;
+  font-size: 100px;
+  font-style: italic;
+}
+
+@keyframes sliderright {
+  From {
+    background-position:-70000%;
+  }
+  To {
+    background-position: 0;
+  }
+}
+.background {
+  position: absolute;
+  bottom: 0;
+  background-image: url(./assets/background.png);
+  background-repeat: repeat-x;
+  animation: sliderright 60s infinite linear;
+  width: 100%;
+  height: 200px;
+}
